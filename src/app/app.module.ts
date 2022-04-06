@@ -31,6 +31,10 @@ import { TakeComponent } from './rxjs-operators/take/take.component';
 import { TakeUntilComponent } from './rxjs-operators/take-until/take-until.component';
 import { DebounceTimeComponent } from './rxjs-operators/debounce-time/debounce-time.component';
 import { DistinctUntilChangedComponent } from './rxjs-operators/distinct-until-changed/distinct-until-changed.component';
+import { SubjectComponent } from './subjects/subject/subject.component';
+import { BehaviorSubjectComponent } from './subjects/behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './subjects/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './subjects/async-subject/async-subject.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +65,11 @@ import { DistinctUntilChangedComponent } from './rxjs-operators/distinct-until-c
     TakeComponent,
     TakeUntilComponent,
     DebounceTimeComponent,
-    DistinctUntilChangedComponent
+    DistinctUntilChangedComponent,
+    SubjectComponent,
+    BehaviorSubjectComponent,
+    ReplaySubjectComponent,
+    AsyncSubjectComponent
   ],
   imports: [
     BrowserModule,
