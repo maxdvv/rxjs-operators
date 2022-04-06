@@ -23,6 +23,14 @@ import { PluckComponent } from './rxjs-operators/pluck/pluck.component';
 import { BufferTimeComponent } from './rxjs-operators/buffer-time/buffer-time.component';
 import { ShareComponent } from './rxjs-operators/share/share.component';
 import { ShareReplayComponent } from './rxjs-operators/share-replay/share-replay.component';
+import { HttpClientModule} from "@angular/common/http";
+import { CatchErrorComponent } from './rxjs-operators/catch-error/catch-error.component';
+import { RetryComponent } from './rxjs-operators/retry/retry.component';
+import { FilterComponent } from './rxjs-operators/filter/filter.component';
+import { TakeComponent } from './rxjs-operators/take/take.component';
+import { TakeUntilComponent } from './rxjs-operators/take-until/take-until.component';
+import { DebounceTimeComponent } from './rxjs-operators/debounce-time/debounce-time.component';
+import { DistinctUntilChangedComponent } from './rxjs-operators/distinct-until-changed/distinct-until-changed.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +54,19 @@ import { ShareReplayComponent } from './rxjs-operators/share-replay/share-replay
     PluckComponent,
     BufferTimeComponent,
     ShareComponent,
-    ShareReplayComponent
+    ShareReplayComponent,
+    CatchErrorComponent,
+    RetryComponent,
+    FilterComponent,
+    TakeComponent,
+    TakeUntilComponent,
+    DebounceTimeComponent,
+    DistinctUntilChangedComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

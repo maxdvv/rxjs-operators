@@ -13,6 +13,7 @@ export class ShareReplayComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('shareReplay - multicasting operators');
+
     const routeEnd = new Subject<{data: any, url: string}>();
     const lastUrl = routeEnd.pipe(
       tap(_ => console.log('executed')),
